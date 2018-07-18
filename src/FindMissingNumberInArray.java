@@ -4,7 +4,7 @@ public class FindMissingNumberInArray {
 	public static void main(String[] args) {
 		int a[] = { -1,0,1, 2, 4, 5 };
 		//int a[] = { 1, 2, 4, 5 };
-		// 1+2+3+4+5=12
+		// 1+2+4+5=12
 		// 1+2+3+4+5=15
 		// 15-12=3;
 		

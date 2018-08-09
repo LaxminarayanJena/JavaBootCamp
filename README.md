@@ -10,4 +10,8 @@
 8)Swap Two Variable <br />
 ## InterviewQuestions
 1)OOPS Concepts <br />
-2)Difference betwee final and finally
+2)Difference betwee final and finally <br />
+3)Access Modifiers
+
+![access-modifiers-in-java](https://user-images.githubusercontent.com/24494133/43875662-ec678f1a-9bae-11e8-9d7f-da66896e277d.png)
+

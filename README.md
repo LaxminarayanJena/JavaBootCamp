@@ -13,5 +13,6 @@
 2)Difference betwee final and finally <br />
 3)Access Modifiers
 
-![access-modifiers-in-java](https://user-images.githubusercontent.com/24494133/43875662-ec678f1a-9bae-11e8-9d7f-da66896e277d.png)
+![accessmodifiers](https://user-images.githubusercontent.com/24494133/44627329-960de580-a949-11e8-8829-685eb59c8f70.PNG)
+
 

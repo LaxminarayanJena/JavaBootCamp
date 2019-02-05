@@ -3,11 +3,12 @@ public class ReverseStringWithoutChangingposition {
 
 	public static void main(String[] args) {
 		String str = "Test the product";
-		 String arr[] = str.split(" ");
-		 for (int i = 0; i < arr.length; i++) {
+		 String temp[] = str.split(" ");
+		 
+		 for (int i = 0; i < temp.length; i++) {
 
-		    for (int j = arr[i].length() - 1; j >= 0; j--) {
-		        System.out.print(arr[i].charAt(j));
+		    for (int j = temp[i].length() - 1; j >= 0; j--) {
+		        System.out.print(temp[i].charAt(j));
 		        
 		    }
 		    System.out.print(" ");

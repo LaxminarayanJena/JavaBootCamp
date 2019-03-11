@@ -38,6 +38,21 @@ public void beforeMethod() {
     throw new SkipException("Testing skip.");
 }
 ```
+## AbstractClass Vs Interface
+![AbstractClassVs Interface](https://user-images.githubusercontent.com/24494133/54104952-8773b100-43f7-11e9-8f20-9591825fd5b5.PNG)
+####   When to use abstract classes
+Consider using abstract classes in following situations:
+
+When you want to share code among several closely related classes.
+When you want to have non-static or non-final variables.
+If classes that extend your abstract class require access modifiers other than public (such as protected and private).
+####  When to use Interfaces
+Consider using interfaces in following situations:
+
+If you want to use multiple inheritance.
+If you expect that unrelated classes would implement your interface. For example, the interfaces Comparable and Cloneable are implemented by many unrelated classes.
+If you want to specify the behavior of a particular method, but not concerned about who implements its behavior.
+
 
 
 

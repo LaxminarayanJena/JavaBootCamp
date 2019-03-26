@@ -54,7 +54,22 @@ If you expect that unrelated classes would implement your interface. For example
 If you want to specify the behavior of a particular method, but not concerned about who implements its behavior.
 
 
+```
+//Main-Main method not found in class
+//no public-Main method not found in class
+//no void-compile time error
+//int[]- error
+//args-can be changed to anyvalue
+
+//main is public because jvm calls outside from the class
+//static- jvm can call directly without creating object
+//void- no return type.once the main method is finished executing, 
+//java program terminates. So there is no point in returning anything, there is nothing that can be done for the returned object by JVM. If we try to return something from the main method,
+//String-Java main method accepts a single argument of type String array. This is also called as java command line argument
 
 
+//JDK-JRE+Developmenttool-Java Development Kit is the core component of Java Environment and provides all the tools, executables and binaries required to compile, debug and execute a Java Program.
+//JRE-JVM+library classes  only wants to run the Java Programs
+//JVM-JVM is responsible for converting Byte code to the machine specific code
 
-
+```

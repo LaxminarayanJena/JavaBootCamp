@@ -73,3 +73,24 @@ If you want to specify the behavior of a particular method, but not concerned ab
 //JVM-JVM is responsible for converting Byte code to the machine specific code
 
 ```
+####  String vs StringBuilder vs String Literal 
+StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously.
+Slower execution
+
+StringBuilder is non-synchronized i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously.
+Fasterexecution
+
+String is immutable  ( once created can not be changed )object  . The object created as a String is stored in the  Constant String Pool  .
+
+
+
+        //StringBuffer bu=new StringBuffer("hello");  
+        //StringBuilder bu=new StringBuilder("hello");  
+    	// bu.append("java"); 
+            	
+        String bu= new String("hello");
+        bu.concat("java");
+       
+        System.out.println(bu);  
+        //output for string is hello where as for builder and buffer is hello java
+   

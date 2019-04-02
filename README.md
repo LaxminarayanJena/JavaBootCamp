@@ -87,8 +87,11 @@ String is immutable  ( once created can not be changed )object  . The object cre
         //StringBuffer bu=new StringBuffer("hello");  
         //StringBuilder bu=new StringBuilder("hello");  
     	// bu.append("java"); 
-            	
+         
+         //String bu="hello";
+        // points to String Pool's location
         String bu= new String("hello");
+        //points to Heap Memory location.
         bu.concat("java");
        
         System.out.println(bu);  

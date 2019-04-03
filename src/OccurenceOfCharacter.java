@@ -1,23 +1,29 @@
+package rough;
 
-public class OccurenceOfCharacter {
-
+public class CharCount {
+	
 	public static void main(String[] args) {
 		
-   countChar("addfgh", 'd');
-	}
-	
-	
-	public static int countChar(String str, char c)
-	{
-	    int count = 0;
-
-	    for(int i=0; i < str.length(); i++)
-	    {    if(str.charAt(i) == c)
-	            count++;
-	    }
-      System.out.println(count);
-	   return count;
-	   
+		
+		String str= "LaxminarayanJena";
+		int count=0;
+		
+		for(char i='a'; i<='z';i++)
+				{
+			for(int j=0;j<str.length()-1;j++)
+			{
+				if(str.charAt(j)==i)
+				{
+					count++;
+				}
+					
+			}
+			if(count!=0)
+			{
+				System.out.println(i +"-"+ count);
+				count=0;
+			}
+				}
 	}
 
 }

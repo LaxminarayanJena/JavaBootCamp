@@ -96,4 +96,11 @@ String is immutable  ( once created can not be changed )object  . The object cre
        
         System.out.println(bu);  
         //output for string is hello where as for builder and buffer is hello java
+        
+        System.out.println is a Java statement that prints the argument passed, into the System.out which is generally stdout.
+####  System.out.println
+System is a Class
+out is a Variable
+println() is a method
+System is a class in the java.lang package . The out is a static member of the System class, and is an instance of java.io.PrintStream . The println is a method of java.io.PrintStream. This method is overloaded to print message to output destination, which is typically a console or file.
    

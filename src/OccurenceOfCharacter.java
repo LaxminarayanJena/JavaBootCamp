@@ -1,6 +1,6 @@
-package rough;
 
-public class CharCount {
+
+public class OccurenceOfCharacter {
 	
 	public static void main(String[] args) {
 		

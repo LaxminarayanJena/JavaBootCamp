@@ -103,4 +103,16 @@ System is a Class
 out is a Variable
 println() is a method
 System is a class in the java.lang package . The out is a static member of the System class, and is an instance of java.io.PrintStream . The println is a method of java.io.PrintStream. This method is overloaded to print message to output destination, which is typically a console or file.
-   
+ 
+ #### This
+1)It can be used to refer instance variable of current class. </br>
+this.salary=salary </br>
+2)invoke current classs constructor </br>
+this(id,name) </br>
+3)invoke current class method </br>
+methodone(this) </br>
+
+ #### Super
+super is used to access variable of parent class </br>
+super is used to acess method of parent class </br>
+super  used to call the parameterised constructor of parent class </br>

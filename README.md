@@ -36,6 +36,7 @@ Using throw keyword you can declare only one Exception at a time
 ```
 public void beforeMethod() {
     throw new SkipException("Testing skip.");
+     throw new ExplicitAssertionError("element not found");
 }
 ```
 ## AbstractClass Vs Interface

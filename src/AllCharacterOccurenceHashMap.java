@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class CharacterOccurenceHashMap {
+public class AllCharacterOccurenceHashMap {
 
 	public static void main(String[] args) {
 		

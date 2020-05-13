@@ -55,6 +55,7 @@ If you expect that unrelated classes would implement your interface. For example
 If you want to specify the behavior of a particular method, but not concerned about who implements its behavior.
 ####  Abstract class has constructor  
 when multiple classes extends the abstract class we dont have to use this keyword to refer multiple instance variable of  class we can use super to call the parameterised constructor of parent class
+super(i,j) instead of this.i=i and this.j=j
 ```
 //Main-Main method not found in class
 //no public-Main method not found in class

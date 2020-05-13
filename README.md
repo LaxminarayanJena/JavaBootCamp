@@ -117,3 +117,5 @@ methodone(this) </br>
 super is used to access variable of parent class </br>
 super is used to acess method of parent class </br>
 super  used to call the parameterised constructor of parent class </br>
+
+![comparable vs comparator](https://user-images.githubusercontent.com/24494133/81765057-85701b00-94f0-11ea-9b02-96b9c7733e7d.PNG)

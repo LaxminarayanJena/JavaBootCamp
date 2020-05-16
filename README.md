@@ -15,6 +15,13 @@
 
 ![accessmodifiers](https://user-images.githubusercontent.com/24494133/44627329-960de580-a949-11e8-8829-685eb59c8f70.PNG)
 ![final finalize finally](https://user-images.githubusercontent.com/24494133/51971422-15768680-249f-11e9-9806-b9f3a041080b.PNG)
+>
+#### Exception
+- you can have single try and multiple catch </br>
+- always Exception e to be written in last catch otherwise "Unreachable catch block for ArithmeticException. It is already handled by the catch block for Exception" </br>
+- preferance 1st catch block </br>
+- only try and finally allowed </br>
+- You cannot have multiple try blocks with a single catch block. Each try block must be followed by catch or finally </br>
 ## Difference between throws,throwable and throw
 The Throwable class is the superclass of all errors and exceptions in the Java language.
 

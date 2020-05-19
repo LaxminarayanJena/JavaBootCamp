@@ -131,3 +131,17 @@ super  used to call the parameterised constructor of parent class </br>
 Object representation of primitive type ex- char- Character </br>
 AutoBoxing-Conversation of primitive datatype to corresponding class object </br>
 Unboxing-Automatic conversation of wrapper class object to primitive data type
+```
+int i=20;
+Integer obj = i;  //boxing
+System.out.println(obj);
+		
+Integer obj1 = new Integer(100);
+int j= obj1;   //unboxing
+System.out.println(j);
+
+		
+ArrayList list = new ArrayList();
+list.add(3);
+list.add(Integer.valueOf(3)); //autoboxing
+```

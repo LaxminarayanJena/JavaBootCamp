@@ -145,6 +145,11 @@ ArrayList list = new ArrayList();
 list.add(3);
 list.add(Integer.valueOf(3)); //autoboxing
 ```
+```
+ myparent obj = new mychild(); //upcasting
+ mychild obj1=(mychild)obj; //downcasting
+ using obj1 we can call methods in child which is not present in parent
+ ```
 Debugging-fn+f11 </br>
 fn+f6 </br>
 ```

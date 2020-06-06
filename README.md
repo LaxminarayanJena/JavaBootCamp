@@ -147,7 +147,7 @@ list.add(Integer.valueOf(3)); //autoboxing
 ```
 Debugging-fn+f11 </br>
 fn+f6 </br>
-
-int i=Integer.parseInt(s);  	
+```
+int i=Integer.parseInt(s); 	
 String st = Integer.toString(a);
-		
+```		

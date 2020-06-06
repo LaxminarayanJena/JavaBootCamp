@@ -146,6 +146,7 @@ list.add(3);
 list.add(Integer.valueOf(3)); //autoboxing
 ```
 ```
+upcasting means casting the object to a supertype, while downcasting means casting to a subtype.
  myparent obj = new mychild(); //upcasting
  mychild obj1=(mychild)obj; //downcasting
  using obj1 we can call methods in child which is not present in parent

@@ -30,6 +30,7 @@ public class MethodOverridingchchild extends MethodOverRiding{
 		//MethodOverridingchchild obj2= new MethodOverRiding();  cant cast
 		obj.a();//parent
 		obj1.a();//child
+		obj1.sal;//parent salary
 		obj2.salary(); 
 	    
 	}

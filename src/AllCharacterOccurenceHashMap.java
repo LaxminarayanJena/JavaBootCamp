@@ -1,32 +1,37 @@
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Map.Entry;
 
-public class AllCharacterOccurenceHashMap {
+public class CharacterOccurence {
 
 	public static void main(String[] args) {
 		
+		String str = "MynameisRamRam";
+		
+		char[] a=str.toCharArray();
+		
+		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+		
+		for (int i = 0; i < a.length; i++)
+		    {
+			
+			      if (hm.containsKey(a[i])) 
+			            {
+				         hm.put(a[i], hm.get(a[i]) + 1);
+			            } 
+			                   
+			      else 
+			      {
+				  hm.put(a[i], 1);
+			       }
 
-		String str= "interview";
-		HashMap<Character, Integer> charMapCount = new HashMap<Character, Integer>();
-		  
-		  for(Character c : str.toCharArray()) {
-		   
-		   if(charMapCount.containsKey(c)) {
-		    charMapCount.put(c, charMapCount.get(c) + 1);
-		   } else {
-		    charMapCount.put(c, 1);
-		   }
-		  }
-		  
-		  
-		  System.out.println(charMapCount);
-		  for (Entry<Character, Integer> entry : charMapCount.entrySet()) {
-	            System.out.println(entry.getKey() + " : " + entry.getValue());
-	        }
-		   }
-		  
+		    }
+		for (Entry<Character, Integer> entry : hm.entrySet()) {
+
+			System.out.println(entry.getKey() + "-" + entry.getValue());
+
+		}
 	}
 
+}
 

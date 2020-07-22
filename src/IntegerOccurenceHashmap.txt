@@ -1,27 +1,29 @@
-package rough;
-
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Map.Entry;
 
-public class AllIntegerOccurenceHashMap {
-
+public class RemoveDuplicates {
+	
 	public static void main(String[] args) {
-
-		int a[] = { 1, 5, 3, 3, 2, 6, 6, 6 };
-		HashMap<Integer, Integer> intMapCount = new HashMap<Integer, Integer>();
-
-		for (int c : a) {
-
-			if (intMapCount.containsKey(c)) {
-				intMapCount.put(c, intMapCount.get(c) + 1);
+		
+		int a[]= {1,2,3,3,3,3,4,4};
+		HashMap<Integer,Integer> intMapCount = new HashMap<Integer,Integer>();
+		
+		for (int i = 0; i < a.length; i++) { 
+           
+            
+            if (intMapCount.containsKey(a[i])) {
+				intMapCount.put(a[i], intMapCount.get(a[i]) + 1);
 			} else {
-				intMapCount.put(c, 1);
+				intMapCount.put(a[i], 1);
 			}
+	
 		}
-		for (Entry<Integer, Integer> entry : intMapCount.entrySet()) {
-			System.out.println(entry.getKey() + " : " + entry.getValue());
+		for(Entry<Integer,Integer> entry :intMapCount.entrySet())
+		{
+			
+				System.out.println(entry.getKey() + "-" +entry.getValue());
+			
 		}
 	}
 
-}
+	

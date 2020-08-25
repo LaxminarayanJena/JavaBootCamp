@@ -1,5 +1,5 @@
 
-public class prime {
+public class primeNo {
 
 	public static void main(String[] args) {
 		

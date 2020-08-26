@@ -22,6 +22,10 @@ public class WordOccurence {
 			       }
 
 		    }
+		
+		int maxvalue=Collections.max((hm.values()));
+		System.out.println(maxvalue);
+		
 		for (Entry<String, Integer> entry : hm.entrySet()) {
 
 			System.out.println(entry.getKey() + "-" + entry.getValue());

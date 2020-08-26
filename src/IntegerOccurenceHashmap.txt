@@ -18,6 +18,10 @@ public class RemoveDuplicates {
 			}
 	
 		}
+		
+		int maxvalue=Collections.max((intMapCount.values()));
+		System.out.println(maxvalue);
+		
 		for(Entry<Integer,Integer> entry :intMapCount.entrySet())
 		{
 			

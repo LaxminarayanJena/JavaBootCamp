@@ -26,6 +26,10 @@ public class CharacterOccurence {
 			       }
 
 		    }
+		
+		int maxvalue=Collections.max((hm.values()));
+		System.out.println(maxvalue);
+		
 		for (Entry<Character, Integer> entry : hm.entrySet()) {
 
 			System.out.println(entry.getKey() + "-" + entry.getValue());

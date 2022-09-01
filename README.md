@@ -157,3 +157,6 @@ fn+f6 </br>
 int i=Integer.parseInt(s); 	
 String st = Integer.toString(a);
 ```		
+ #### SingleTon class </br>
+Make a constructor private </br>
+Write a static method that has return type of object of this singleton class </br>

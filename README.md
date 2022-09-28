@@ -16,6 +16,15 @@
 ![accessmodifiers](https://user-images.githubusercontent.com/24494133/44627329-960de580-a949-11e8-8829-685eb59c8f70.PNG)
 ![final finalize finally](https://user-images.githubusercontent.com/24494133/51971422-15768680-249f-11e9-9806-b9f3a041080b.PNG)
 >
+
+
+#### Constructor
+ constructor is similar to the method. The property of the constructor is that it must have the same name as the class name. It has no return type. We do not require to call the constructor manually. It automatically invokes implicitly during the instantiation.
+
+In other words, a constructor is a method that is called at runtime during the object creation by using the new operator. The JVM calls it automatically when we create an object. When we do not define a constructor in the class, the default constructor is always invisibly present in the class. There are the following reasons to use constructors:
+
+We use constructors to initialize the object with the default or initial state. 
+ we use the constructor to initialize the instance variable of the class.
 #### Exception
 - you can have single try and multiple catch </br>
 - always Exception e to be written in last catch otherwise "Unreachable catch block for ArithmeticException. It is already handled by the catch block for Exception" </br>

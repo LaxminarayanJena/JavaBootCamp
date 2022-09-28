@@ -22,9 +22,12 @@
  constructor is similar to the method. The property of the constructor is that it must have the same name as the class name. It has no return type. We do not require to call the constructor manually. It automatically invokes implicitly during the instantiation.
 
 In other words, a constructor is a method that is called at runtime during the object creation by using the new operator. The JVM calls it automatically when we create an object. When we do not define a constructor in the class, the default constructor is always invisibly present in the class. There are the following reasons to use constructors:
-
 We use constructors to initialize the object with the default or initial state. 
  we use the constructor to initialize the instance variable of the class.
+ 
+ #### Static
+ The static keyword in Java is mainly used for memory management. The static keyword in Java is used to share the same variable or method of a given class. The users can apply static keywords with variables, methods, blocks, and nested classes. The static keyword belongs to the class than an instance of the class. 
+ geeksforgeeks.org/static-keyword-java/#:~:text=The%20static%20keyword%20in%20Java,an%20instance%20of%20the%20class.
 #### Exception
 - you can have single try and multiple catch </br>
 - always Exception e to be written in last catch otherwise "Unreachable catch block for ArithmeticException. It is already handled by the catch block for Exception" </br>

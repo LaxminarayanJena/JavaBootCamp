@@ -172,3 +172,6 @@ String st = Integer.toString(a);
  #### SingleTon class </br>
 Make a constructor private </br>
 Write a static method that has return type of object of this singleton class </br>
+
+#### Serialization and deserialisation </br>
+[a link](http://makeseleniumeasy.com/2022/02/21/rest-assured-tutorial-75-what-is-serialization-and-deserialization-in-rest-assured/#:~:text=Serialization%20is%20a%20conversion%20of,also%20be%20transferred%20over%20networks.)

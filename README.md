@@ -175,3 +175,5 @@ Write a static method that has return type of object of this singleton class </b
 
 #### Serialization and deserialisation </br>
 [Serialization and deserialisation](http://makeseleniumeasy.com/2022/02/21/rest-assured-tutorial-75-what-is-serialization-and-deserialization-in-rest-assured/#:~:text=Serialization%20is%20a%20conversion%20of,also%20be%20transferred%20over%20networks.)
+ 
+ We generally use POJOs to create JSON payload and convert JSON response payload to Java objects. Converting a POJO object to a JSON object is Serialization and converting a JSON object to a POJO object is called deserialization. These conversions can be done with help of Java libraries like Jackson, Gson etc. 

@@ -51,6 +51,20 @@ public class StringManipulation {
 		System.out.println(a+b+x+y);
 		System.out.println(x+y+(a+b));
 		
+		////
+		
+		public static boolean containsAllVowels(String inputString) {
+                String vowels = "aeiou";
+    
+               for (int i = 0; i < vowels.length(); i++) {
+                if (inputString.indexOf(vowels.charAt(i)) == -1) {
+                 return false;
+                }
+    }
+    
+    return true;
+}
+		
 		
 	}
 

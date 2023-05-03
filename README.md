@@ -117,6 +117,28 @@ String is immutable  ( once created can not be changed )object  . The object cre
        
         System.out.println(bu);  
         //output for string is hello where as for builder and buffer is hello java
+	
+	        String s1 = "LAXMI";
+		String s2 = "LAXMI";
+		String s3 = new String("LAXMI");
+		String s4 = new String("LAXMI");
+
+		System.out.println(s1 == s2); // TRUE
+		System.out.println(s1 == s3); // FALSE
+		System.out.println(s1.equals(s2)); // TRUE
+		System.out.println(s1.equals(s3)); // TRUE
+		System.out.println(s3 == s4);// FALSE
+		
+		System.out.println("-----");
+		String s5 = "Java";
+		String s6 = "Java";
+		
+		System.out.println(s5 == s6); //true
+		System.out.println(s5.equals(s2)); // false
+		
+		String s7 = new String("Java");
+		System.out.println(s6 == s7); //false
+		System.out.println(s6.equals(s7)); //true
         
         System.out.println is a Java statement that prints the argument passed, into the System.out which is generally stdout.
 ####  System.out.println

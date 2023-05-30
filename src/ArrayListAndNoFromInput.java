@@ -4,8 +4,12 @@ public class ArrayListExample {
 	public static void main(String[] args) {
 
 		ArrayList<Integer> numbers = new ArrayList<>();
-
-		numbers.add(10);
+                Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+		System.out.println("Enter number");
+		String str = myObj.nextLine(); 
+		int a = Integer.parseInt(str);
+		
+		numbers.add(a);
 		numbers.add(20);
 		numbers.add(30);
 

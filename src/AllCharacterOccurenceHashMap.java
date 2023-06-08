@@ -38,4 +38,23 @@ public class CharacterOccurence {
 	}
 
 }
+-------------------------------------------------
+	
+	String inputString = "Hello, World!";
+         int[] charOccurrences = new int[255];
+ //The size 256 is chosen to accommodate all possible ASCII characters, 
+         //as ASCII values range from 0 to 255.
+         // Iterating over each character in the string
+         for (char c : inputString.toCharArray()) {
+             // Incrementing the occurrence count for the character
+             charOccurrences[c]++;
+         }
+
+         // Displaying the character occurrences
+         System.out.println("Character occurrences in the string:");
+         for (int i = 0; i < charOccurrences.length; i++) {
+             if (charOccurrences[i] > 0) {
+                 System.out.println((char) i + ": " + charOccurrences[i]);
+             }
+         }}
 

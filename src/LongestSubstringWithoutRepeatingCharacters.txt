@@ -5,7 +5,6 @@ import java.util.Set;
 
 public class LongestSubstringWithoutRepeatingCharacters {
 
-
 	    public static int findLongestSubstringLength(String s) {
 	        int n = s.length();
 	        int maxLength = 0;
@@ -28,7 +27,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
 	    }
 
 	    public static void main(String[] args) {
-	        String s = "ohmoppwkrp";
+	        String s = "ohmoppwkrp"; //4
 	        int length = findLongestSubstringLength(s);
 	        System.out.println("Length of the longest substring without repeating characters: " + length);
 	    }

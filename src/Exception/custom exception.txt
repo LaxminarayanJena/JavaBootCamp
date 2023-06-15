@@ -1,0 +1,23 @@
+public class CustomException extends Exception {
+    public CustomException() {
+        super();
+    }
+
+    public CustomException(String message) {
+        super(message);
+    }
+}
+
+
+public class MyClass {
+    public void myMethod() throws CustomException {
+        // ...
+        if (/* condition */) {
+            throw new CustomException("Custom error message");
+        }
+        // ...
+    }
+}
+
+
+

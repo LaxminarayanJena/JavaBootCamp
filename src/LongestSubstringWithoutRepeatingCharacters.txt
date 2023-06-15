@@ -1,0 +1,36 @@
+package safesendTest;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class LongestSubstringWithoutRepeatingCharacters {
+
+
+	    public static int findLongestSubstringLength(String s) {
+	        int n = s.length();
+	        int maxLength = 0;
+	        int i = 0;
+	        int j = 0;
+	        HashSet<Character> set = new HashSet<>();
+
+	        while (i < n && j < n) {
+	            if (!set.contains(s.charAt(j))) {
+	                // Add the character to the set and move the sliding window's right boundary
+	                set.add(s.charAt(j++));
+	                maxLength = Math.max(maxLength, j - i);
+	            } else {
+	                // Remove the character at the left boundary of the sliding window
+	                set.remove(s.charAt(i++));
+	            }
+	        }
+
+	        return maxLength;
+	    }
+
+	    public static void main(String[] args) {
+	        String s = "ohmoppwkrp";
+	        int length = findLongestSubstringLength(s);
+	        System.out.println("Length of the longest substring without repeating characters: " + length);
+	    }
+	}
+

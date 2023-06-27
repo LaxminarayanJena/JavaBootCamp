@@ -27,3 +27,35 @@ System.out.println("missing no is "+ (sum1-sum));
 	}
 
 }
+
+---------------------------------------------
+	public class FindMissingNumberIn2Array{
+    public static List<Integer> findMissingNumbers(int[] firstArray, int[] secondArray) {
+        List<Integer> missingNumbers = new ArrayList<>();
+        
+        // Convert the first array to a set for efficient lookup
+        Set<Integer> firstSet = new HashSet<>();
+        for (int num : firstArray) {
+            firstSet.add(num);
+        }
+        
+        // Iterate over the second array
+        for (int num : secondArray) {
+            // Check if the number is present in the first array
+            if (!firstSet.contains(num)) {
+                missingNumbers.add(num);
+            }
+        }
+        
+        return missingNumbers;
+    }
+    
+    public static void main(String[] args) {
+        int[] firstArray = {1, 2, 3, 4, 5};
+        int[] secondArray = {1, 3, 5, 6, 7};
+        List<Integer> missingNumbers = findMissingNumbers(firstArray, secondArray);
+        
+        System.out.println("Missing numbers: " + missingNumbers);
+    }
+}
+

@@ -29,5 +29,71 @@ public class RemoveDuplicates {
 			
 		}
 	}
+---------------------------------------------using for loop only
+
+public class UniqueOccurrences {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5, 4, 4, 3, 2, 1, 1};
+
+        int[] uniqueOccurrences = new int[array.length];
+
+        for (int i = 0; i < array.length; i++) {
+            if (uniqueOccurrences[i] == 0) {
+                int count = 1;
+                for (int j = i + 1; j < array.length; j++) {
+                    if (array[i] == array[j]) {
+                        count++;
+                        uniqueOccurrences[j] = -1; // Marking non-unique occurrences
+                    }
+                }
+                uniqueOccurrences[i] = count;
+            }
+        }
+
+        // Printing the unique occurrences
+        for (int i = 0; i < array.length; i++) {
+            if (uniqueOccurrences[i] > 0) {
+                System.out.println(array[i] + "-" + uniqueOccurrences[i]);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	

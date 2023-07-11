@@ -199,6 +199,32 @@ Write a static method that has return type of object of this singleton class </b
 [Serialization and deserialisation](http://makeseleniumeasy.com/2022/02/21/rest-assured-tutorial-75-what-is-serialization-and-deserialization-in-rest-assured/#:~:text=Serialization%20is%20a%20conversion%20of,also%20be%20transferred%20over%20networks.)
  
  We generally use POJOs to create JSON payload and convert JSON response payload to Java objects. Converting a POJO object to a JSON object is Serialization and converting a JSON object to a POJO object is called deserialization. These conversions can be done with help of Java libraries like Jackson, Gson etc. 
+
+```
+ To create a thread in Java, you have two main approaches: extending the Thread class or implementing the Runnable interface
+
+public class MyThread extends Thread {
+    @Override
+    public void run() {
+        // Code to be executed in the thread
+    }
+}
+
+MyThread thread = new MyThread();
+thread.start();
+
+public class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+        // Code to be executed in the thread
+    }
+}
+
+MyRunnable runnable = new MyRunnable();
+Thread thread = new Thread(runnable);
+thread.start();
+
+```
  
  #### Maven Lifecycle </br>
  ![image](https://user-images.githubusercontent.com/24494133/204192354-fe9e8e39-b672-442f-aab8-2562399a8c93.png)

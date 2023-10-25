@@ -33,3 +33,40 @@ public class LongestSubstringWithoutRepeatingCharacters {
 	    }
 	}
 
+/////
+
+public class LongestSubstringWithoutRepeatingChars {
+    public static String findLongestSubstringWithoutRepeatingChars(String s) {
+        int n = s.length();
+        int maxLength = 0; // Length of the longest substring without repeating characters
+        int start = 0; // Start index of the current substring
+        HashMap<Character, Integer> charIndexMap = new HashMap<>();
+        int subStart = 0; // Start index of the longest substring
+
+        for (int i = 0; i < n; i++) {
+            char currentChar = s.charAt(i);
+
+            if (charIndexMap.containsKey(currentChar) && charIndexMap.get(currentChar) >= start) {
+                // If the character is already in the substring and its index is greater than or equal to the start of the current substring
+                start = charIndexMap.get(currentChar) + 1;
+            }
+
+            charIndexMap.put(currentChar, i);
+
+            if (i - start + 1 > maxLength) {
+                maxLength = i - start + 1;
+                subStart = start;
+            }
+        }
+
+        return s.substring(subStart, subStart + maxLength);
+    }
+
+    public static void main(String[] args) {
+        String input = "abcabcbb";
+        String longestSubstring = findLongestSubstringWithoutRepeatingChars(input);
+        System.out.println("Longest substring without repeating characters: " + longestSubstring);
+    }
+}
+
+

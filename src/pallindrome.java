@@ -31,4 +31,52 @@ public class pallindrome {
 
 	}
 
+/////----------------------------------
+public class LongestPalindromicSubstring {
+    public static String findLongestPalindromicSubstring(String s) {
+        int n = s.length();
+        boolean[][] isPalindrome = new boolean[n][n];
+
+        int maxLength = 1; // Length of the longest palindromic substring
+        int start = 0; // Start index of the longest palindromic substring
+
+        // All substrings of length 1 are palindromes
+        for (int i = 0; i < n; i++) {
+            isPalindrome[i][i] = true;
+        }
+
+        // Check for palindromes of length 2
+        for (int i = 0; i < n - 1; i++) {
+            if (s.charAt(i) == s.charAt(i + 1)) {
+                isPalindrome[i][i + 1] = true;
+                maxLength = 2;
+                start = i;
+            }
+        }
+
+        // Check for palindromes of length 3 or more
+        for (int length = 3; length <= n; length++) {
+            for (int i = 0; i < n - length + 1; i++) {
+                int j = i + length - 1;
+
+                if (s.charAt(i) == s.charAt(j) && isPalindrome[i + 1][j - 1]) {
+                    isPalindrome[i][j] = true;
+                    if (length > maxLength) {
+                        maxLength = length;
+                        start = i;
+                    }
+                }
+            }
+        }
+
+        return s.substring(start, start + maxLength);
+    }
+
+    public static void main(String[] args) {
+        String input = "babadmalayalam";
+        String longestPalindrome = findLongestPalindromicSubstring(input);
+        System.out.println("Longest palindromic substring: " + longestPalindrome);
+    }
+}
+
 

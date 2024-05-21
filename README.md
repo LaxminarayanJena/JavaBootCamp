@@ -229,3 +229,15 @@ thread.start();
  #### Maven Lifecycle </br>
  ![image](https://user-images.githubusercontent.com/24494133/204192354-fe9e8e39-b672-442f-aab8-2562399a8c93.png)
 
+```
+           String temp[] = new String[3];
+           Scanner obj= new Scanner(System.in)  ;
+           for(int i=0;i<temp.length;i++)
+           {
+               temp[i]=obj.nextLine();
+           }
+```
+
+  
+
+

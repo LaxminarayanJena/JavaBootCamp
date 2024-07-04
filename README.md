@@ -14,7 +14,8 @@
 - The main method is static, so it can't be overridden in the usual sense because static methods belong to the class, not to an instance. <br />
 - Main method can be overloaded <br/>
 - we cannot create an abstract method without it being part of an abstract class or an interface. <br/>
-- A functional interface in Java is a special type of interface that contains exactly one abstract method. 
+- A functional interface in Java is a special type of interface that contains exactly one abstract method. <br/>
+- Static Methods,Final Methods,Private Methods,Final Classes,Constructors cannot be overriden <br/>
 
 
 

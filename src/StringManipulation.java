@@ -69,3 +69,38 @@ public class StringManipulation {
 	}
 
 }
+--------------------------------------------------------------VOWEL COUNT-----------------
+
+	import java.util.HashMap;
+
+public class VowelCount {
+    public static void main(String[] args) {
+        String s = "arteionutr";
+        // Convert string to lowercase to handle both uppercase and lowercase vowels
+        s = s.toLowerCase();
+        
+        // Initialize a HashMap to store the count of vowels
+        HashMap<Character, Integer> vowelCount = new HashMap<>();
+        
+        // Initialize the vowels
+        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+        
+        // Fill the HashMap with vowels and set their initial count to 0
+        for (char vowel : vowels) {
+            vowelCount.put(vowel, 0);
+        }
+        
+        // Iterate over the string and count vowels
+        for (char ch : s.toCharArray()) {
+            if (vowelCount.containsKey(ch)) {
+                vowelCount.put(ch, vowelCount.get(ch) + 1);
+            }
+        }
+        
+        // Print the results
+        for (char vowel : vowels) {
+            System.out.println(vowel + ": " + vowelCount.get(vowel));
+        }
+    }
+}
+

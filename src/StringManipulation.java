@@ -104,3 +104,29 @@ public class VowelCount {
     }
 }
 
+---------------------------- swap entire string upper to lower and lower to upper
+
+	public class SwapCase {
+    public static void main(String[] args) {
+        String inputText = "Hi I aM JeNa RamSh , i AM AutoMation TesTer";
+        String swappedText = swapCase(inputText);
+        System.out.println(swappedText);
+    }
+
+    public static String swapCase(String str) {
+        StringBuffer result = new StringBuffer(str.length());
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (Character.isUpperCase(c)) {
+                result.append(Character.toLowerCase(c));
+            } else if (Character.isLowerCase(c)) {
+                result.append(Character.toUpperCase(c));
+            } else {
+                result.append(c);
+            }
+        }
+        return result.toString();
+    }
+}
+
+

@@ -28,8 +28,8 @@ We use constructors to initialize the object with the default or initial state.
  we use the constructor to initialize the instance variable of the class.
  
  #### Static
- The static keyword in Java is mainly used for memory management. The static keyword in Java is used to share the same variable or method of a given class. The users can apply static keywords with variables, methods, blocks, and nested classes. The static keyword belongs to the class than an instance of the class. 
- geeksforgeeks.org/static-keyword-java/#:~:text=The%20static%20keyword%20in%20Java,an%20instance%20of%20the%20class.
+ The static keyword in Java is mainly used for memory management. Static variable is a class-level variable that is shared among all instances of the class. Unlike instance variables, which are unique to each object, static variables have the same value for all objects of a class. </br>
+ All instances of a class share the same copy of a static variable. If one object modifies the static variable, all other instances will see the updated value.
 #### Exception
 - you can have single try and multiple catch </br>
 - always Exception e to be written in last catch otherwise "Unreachable catch block for ArithmeticException. It is already handled by the catch block for Exception" </br>

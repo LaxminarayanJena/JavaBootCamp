@@ -117,32 +117,30 @@ String is immutable  ( once created can not be changed )object  . The object cre
         //points to Heap Memory location.
         bu.concat("java");
        
+       String str1 = "Hello";
+		String str2 = "Hello";
+		String str3 = new String("Hello");
+		String str4 = new String("Hello");
+
+		System.out.println(str1 == str2);   //true
+		System.out.println(str1 == str3);  //false
+		System.out.println(str3 == str4);  //false
+		System.out.println(str1.equals(str2)); //true 
+		System.out.println(str1.equals(str3));//true
+		System.out.println(str3.equals(str4));//true
+		
+
+		/*
+		 * The == operator is used to compare the references of two objects. 
+		 memory location.
+		
+		On the other hand, the .equals() method is used to compare the actual content or value of objects.
+		
+		
         System.out.println(bu);  
         //output for string is hello where as for builder and buffer is hello java
-	
-	        String s1 = "LAXMI";
-		String s2 = "LAXMI";
-		String s3 = new String("LAXMI");
-		String s4 = new String("LAXMI");
-
-		System.out.println(s1 == s2); // TRUE
-		System.out.println(s1 == s3); // FALSE
-		System.out.println(s1.equals(s2)); // TRUE
-		System.out.println(s1.equals(s3)); // TRUE
-		System.out.println(s3 == s4);// FALSE
-		
-		System.out.println("-----");
-		String s5 = "Java";
-		String s6 = "Java";
-		
-		System.out.println(s5 == s6); //true
-		System.out.println(s5.equals(s2)); // false
-		
-		String s7 = new String("Java");
-		System.out.println(s6 == s7); //false
-		System.out.println(s6.equals(s7)); //true
-        
         System.out.println is a Java statement that prints the argument passed, into the System.out which is generally stdout.
+	
 ####  System.out.println
 System is a Class
 out is a Variable

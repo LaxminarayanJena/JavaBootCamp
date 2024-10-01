@@ -125,8 +125,9 @@ String is immutable  ( once created can not be changed )object  . The object cre
 		String s3 = new String("LAXMI");
 		String s4 = new String("LAXMI");
 
-		System.out.println(s1 == s2); // TRUE
-		System.out.println(s1 == s3); // FALSE
+		System.out.println(s1 == s2); // TRUE  s1 == s2: Both s1 and s2 refer to the same string in the string pool, so this returns true.
+		System.out.println(s1 == s3); // FALSE  s1 == s3: s1 refers to the string from the string pool, while s3 is a new object created using new String(), which refers to a 
+                                               different object in heap memory, so this returns false.
 		System.out.println(s1.equals(s2)); // TRUE
 		System.out.println(s1.equals(s3)); // TRUE
 		System.out.println(s3 == s4);// FALSE

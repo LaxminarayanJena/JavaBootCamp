@@ -59,6 +59,43 @@ public class UniqueOccurrences {
     }
 }
 
+----------------------------------------------
+Complete the method to find the most repeating integer in the given input array? DO NOT use HashMap/HashSet. 
+
+public class Main {
+
+    public static int getValue(int[] arr) {
+        int maxCount = 0;  // to keep track of the highest count
+        int mostFrequent = arr[0];  // to store the most frequent element
+
+        // Outer loop to pick each element one by one
+        for (int i = 0; i < arr.length; i++) {
+            int count = 0;  // reset count for each element
+
+            // Inner loop to count occurrences of the selected element
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                }
+            }
+
+            // If this element has more occurrences, update the result
+            if (count > maxCount) {
+                maxCount = count;
+                mostFrequent = arr[i];
+            }
+        }
+
+        return mostFrequent;
+    }
+
+    public static void main(String[] args) {
+        int[] input = {2, 5, 9, 3, 2, 8, 9, 6, 5, 8, 9};
+        int result = getValue(input);
+        System.out.println("The most frequent element is: " + result);
+    }
+}
+
 
 
 

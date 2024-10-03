@@ -239,6 +239,19 @@ thread.start();
            {
                temp[i]=obj.nextLine();
            }
+
+       int[] intArray = {1, 2, 3, 4, 5};
+
+        // Using StringBuilder to convert int array to string
+        StringBuilder sb = new StringBuilder();
+        for (int num : intArray) {
+            sb.append(num);
+        }
+
+        // Convert StringBuilder to String
+        String result = sb.toString();
+
+        System.out.println(result);  // Output: "12345"
 ```
 
   

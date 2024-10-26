@@ -25,7 +25,10 @@
 
 In other words, a constructor is a method that is called at runtime during the object creation by using the new operator. The JVM calls it automatically when we create an object. When we do not define a constructor in the class, the default constructor is always invisibly present in the class. There are the following reasons to use constructors:
 We use constructors to initialize the object with the default or initial state. 
- we use the constructor to initialize the instance variable of the class.
+ we use the constructor to initialize the instance variable of the class. </br>
+
+ Constructors are not inherited, so you can't override them in the subclass.
+super Keyword: You can call the superclass constructor within the subclass constructor using super()
  
  #### Static
  The static keyword in Java is mainly used for memory management. Static variable is a class-level variable that is shared among all instances of the class. Unlike instance variables, which are unique to each object, static variables have the same value for all objects of a class. </br>

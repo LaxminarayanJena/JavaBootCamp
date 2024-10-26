@@ -2,6 +2,27 @@ package webTest;
 
 public class RotationString {
     public static boolean areRotations(String s1, String s2) {
+
+        /*
+          int a[]={1, 2, 3, 4, 5, 6, 7};
+        //Rotated List: [7, 1, 2, 3, 4, 5, 6]
+        //6712345
+
+        int rotationCount = 1;
+        int b[] = new int[a.length];
+        int size = a.length;
+    
+        for (int i = 0; i < size; i++) {
+            b[(i + rotationCount) % size] = a[i];
+        }
+        
+        for(int i=0;i<b.length;i++)
+        {
+            System.out.println(b[i]);
+        }
+
+
+        */
         if (s1.length() != s2.length())
             return false;
         String concatenated = s1 + s1;

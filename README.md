@@ -80,6 +80,8 @@ If you want to specify the behavior of a particular method, but not concerned ab
 ####  Abstract class has constructor  
 when multiple classes extends the abstract class we dont have to use this keyword to refer multiple instance variable of  class we can use super to call the parameterised constructor of parent class
 super(i,j) instead of this.i=i and this.j=j
+
+####  JDK,MAIN METHOD
 ```
 //Main-Main method not found in class
 //no public-Main method not found in class
@@ -97,6 +99,10 @@ super(i,j) instead of this.i=i and this.j=j
 //JDK-JRE+Developmenttool-Java Development Kit is the core component of Java Environment and provides all the tools, executables and binaries required to compile, debug and execute a Java Program.
 //JRE-JVM+library classes  only wants to run the Java Programs
 //JVM-JVM is responsible for converting Byte code to the machine specific code
+
+Compiler (javac): Translates Java source code to platform-independent bytecode.
+Interpreter (JVM): Executes bytecode on the host machine, making Java platform-independent.
+JIT Compiler: Optimizes performance by converting bytecode to native machine code at runtime.
 
 ```
 ####  String vs StringBuilder vs String Literal 

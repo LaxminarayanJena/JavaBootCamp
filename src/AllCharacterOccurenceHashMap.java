@@ -58,6 +58,33 @@ public class CharacterOccurence {
              }
          }}
 
+---------------------------------------------------
+
+	input-aabbccaddd
+	output-a2b2c2a1d3
+	
+	public class CharFrequency {
+    public static void main(String[] args) {
+        String input = "aabbccaddd";
+        StringBuilder result = new StringBuilder();
+
+        int count = 1;
+        for (int i = 0; i < input.length(); i++) {
+            // If next char is the same, increase count
+            if (i + 1 < input.length() && input.charAt(i) == input.charAt(i + 1)) {
+                count++;
+            } else {
+                // Append char + count, then reset count
+                result.append(input.charAt(i)).append(count);
+                count = 1;
+            }
+        }
+
+        System.out.println(result.toString());
+    }
+}
+
+
 
 
 

@@ -166,3 +166,22 @@ System.out.println("-------------------next program----------------------");
 	}
 	
 }
+-----
+1
+222
+33333
+4444444
+
+	 int lines = 4; // you can change this to print more lines
+        int count = 1;
+
+        for (int i = 1; i <= lines; i++) {
+            // print the number i, 'count' times
+            for (int j = 1; j <= count; j++) {
+                System.out.print(i);
+            }
+            System.out.println(); // move to next line
+            count += 2; // increase repetition by 2 for the next line
+
+
+
